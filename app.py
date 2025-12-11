@@ -148,7 +148,7 @@ demo = gr.Interface(
     fn=predict_genre,
     inputs=gr.Audio(type="filepath", label="Upload a song (~10s–30s)"),
     outputs=gr.Label(label="Predicted genre"),
-    title="Music Genre Classification (Fast Version)",
+    title="Music Genre Classification (SVM Version)",
     description="This demo uses the first 10 seconds of the uploaded audio and a traditional ML model (SVM).",
 )
 
